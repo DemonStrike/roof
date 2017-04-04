@@ -42,6 +42,16 @@ html {
     position: relative;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    }
+
+.clearfix:after {
+clear: both;
+}
+
 .input-text {
     border: solid 1px #e6e6e6;
     box-sizing: border-box;
@@ -643,5 +653,257 @@ html {
     margin-left: 330px;
     padding-top: 0px;
 }
+
+.geography  {
+    position: relative;
+}
+
+.geography h2 {
+    font-family: "ProximaNova-Black";
+    color: #004275;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+
+.geography-map-id1 {
+    position: absolute;
+    top: 250px;
+    left: 320px;
+}
+
+.geography-map-id2 {
+    position: absolute;
+    top: 330px;
+    left: 680px;
+}
+
+.geography-map-id3 {
+    position: absolute;
+    top: 430px;
+    left: 580px;
+}
+
+.geography-map-id4 {
+    position: absolute;
+    top: 430px;
+    left: 180px;
+}
+
+.geography-text span {
+    font-family: "ProximaNova-Bold";
+}
+
+.geography-sertificate {
+    font-family: "ProximaNova-Black";
+    text-align: center;
+    font-size: 120px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: -70px;
+}
+
+.geography-sertificate-img {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.geography-sertificate-img img{
+    margin-right: 80px;
+}
+
+.geography-sertificate-img img:last-child{
+    margin-right: 0px;
+}
+
+.question {
+    background-color: #f5f5f5;
+    padding: 1px; 
+}
+
+.question-tittle {
+    font-family: "ProximaNova-Black";
+    color: #004275;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.question-description {
+    margin-top: 5px;
+}
+
+.question input{
+    margin-right: 20px;
+}
+
+.question form{
+    margin-bottom: 40px;
+}
+
+.footer {
+    background-color: #004275;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 28px;
+}
+
+.footer li{
+    list-style: none;
+    line-height: 24px;
+    text-decoration: underline;
+    transition: all 0.5s;
+    
+}
+
+.footer li:hover{
+    list-style: none;
+    line-height: 24px;
+    text-decoration: none;
+    transition: all 3s;
+}
+
+.footer-link-menu {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: top;
+    margin-top: 24px;
+    margin-left: 50px;
+}
+
+.footer-link-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 24px;
+}
+
+.footer-contact {
+    display: inline-block;
+    margin-top: 20px;
+    float: right;
+}
+
+.footer-contact-tel {
+    font-size: 18px;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.footer-contact-tel span {
+    font-size: 14px;
+}
+
+.footer-contact-manager {
+    text-align: right; 
+}
+
+.footer-contact-manager-tittle {
+    font-family: "ProximaNova-Bold";
+    margin-bottom: 0px;
+}
+
+.footer-contact-manager-text {
+    line-height: 24px;
+    margin-top: 5px;
+}
+
+.copyright {
+    background-color: #00345d;
+    color: #fff;
+    font-size: 14px;
+    color: #91a5c4;
+}
+
+.copyright-text {
+    display: inline-block;
+    margin-right: 50%;
+}
+
+.copyright-work {
+    display: inline-block;
+    float: right;
+}
+
+.copyright-work a{
+    color: #91a5c4;
+    transition: all 0.5s;
+    text-decoration: none;
+    font-family: "ProximaNova-Black";
+}
+
+.copyright-work a:hover{
+    color: #fff;
+}
+
 /*--------------------home-----------------------*/
+
+
+
+
+
+
+/*--------------------complect-----------------------*/
+
+.header-full {
+    background-color: #004275;
+    height: 100px;
+}
+
+.crumbs {
+    height: 50px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.crumbs-no-active {
+    color:#b2b2b2;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    line-height: 55px;
+    text-decoration: none;
+}
+
+.crumbs-active {
+    color:#004275;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    line-height: 55px;
+    text-decoration: none;
+}
+
+.item-complect h1{
+    font-family: "ProximaNova-Bold";
+    color: #4a4a4a;
+    font-size: 36px;
+}
+
+.item-complect-block {
+    box-sizing: border-box;
+    width: 180px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.item-complect-block-img {
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+}
+
+.item-complect-block-img img {
+    margin-top: 25px;
+}
+/*--------------------complect-----------------------*/
 
