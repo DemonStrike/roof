@@ -1035,3 +1035,77 @@ clear: both;
 
 
 /*--------------------experement-----------------------*/
+
+
+
+
+
+/*--------------------contact-----------------------*/
+
+.contact h1{
+    font-family: "ProximaNova-Bold";
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.contact-text {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+.contact-tel span {
+    font-family: "ProximaNova-Bold";
+}
+
+.contact-manager span {
+    font-family: "ProximaNova-Bold";
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.contact-map {
+    display: inline-block;
+    margin-top: 20px;
+    float: right;
+    margin-bottom: 100px;
+}
+/*--------------------contact-----------------------*/
+
+
+
+/*--------------------card-----------------------*/
+
+.card-page h1{
+    font-family: "ProximaNova-Bold";
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.gallery {
+    display: inline-block;
+}
+
+.gallery-big-img {
+    margin-top: 30px;
+    width: 502px;
+    height: 400px;
+    background-color: antiquewhite;
+    margin-bottom: 12px;
+}
+
+.gallery-small-img-block {
+    width: 90px;
+    height: 75px;
+    background-color: aquamarine;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+.card-page-information {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+/*--------------------card-----------------------*/
