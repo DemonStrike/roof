@@ -38,7 +38,7 @@ html {
     }
 
 .container-center {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     position: relative;
 }
@@ -993,3 +993,45 @@ clear: both;
     text-decoration: none;
 }
 /*--------------------instruction-----------------------*/
+
+
+
+
+/*--------------------experement-----------------------*/
+
+
+.experement-block h1{
+    font-family: "ProximaNova-Bold";
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.experement-block p{
+    font-family: "ProximaNova-Light";
+    font-size: 18px;
+    margin-top: 0;
+}
+
+
+.experement-pdf-block img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.experement-pdf-block {
+    float: left;
+    color: #004275;
+    font-size: 14px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+.experement-pdf-block p{
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/*--------------------experement-----------------------*/
