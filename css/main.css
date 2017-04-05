@@ -33,7 +33,8 @@ font-family: 'ProximaNova-Bold';
 /*--------------------for-all------------------------------*/
 
 html {
-    font-family: "ProximaNova-Light", "Arial", "sans-serif";   
+    font-family: "ProximaNova-Light", "Arial", "sans-serif";
+    color: #4a4a4a;
     }
 
 .container-center {
@@ -893,6 +894,7 @@ clear: both;
     text-align: center;
     display: inline-block;
     margin-right: 5px;
+    margin-top: 10px;
 }
 
 .item-complect-block-img {
@@ -905,5 +907,89 @@ clear: both;
 .item-complect-block-img img {
     margin-top: 25px;
 }
+
+.question-complect {
+    background-color: #f5f5f5;
+    padding: 1px; 
+    margin-top: 30px;
+}
+
+.question-complect-tittle {
+    font-family: "ProximaNova-Black";
+    color: #004275;
+    font-size: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.question-complect-description {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.question-complect input{
+    margin-right: 20px;
+}
+
+.question-complect form{
+    margin-bottom: 40px;
+}
+
+
 /*--------------------complect-----------------------*/
 
+
+
+
+
+/*--------------------instruction-----------------------*/
+
+.instruction-video h1{
+    font-family: "ProximaNova-Bold";
+    color: #4a4a4a;
+    font-size: 36px;
+}
+
+.instruction-video-block {
+    width: 300px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.instruction-video-block p{
+    margin-top: 5px;
+}
+
+.insctruction-pdf-img {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.insctruction-pdf-text {
+    display: inline-block;
+    max-width: 800px;
+}
+
+.insctruction-pdf-tittle {
+    font-size: 18px;
+    font-family: "ProximaNova-Bold";
+    margin-bottom: 0px;
+}
+
+.insctruction-pdf-description {
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+
+.insctruction-pdf-link {
+    color: #004275;
+    font-size: 14px;   
+    margin-right: 15px;
+}
+
+.insctruction-pdf-link:hover {
+    text-decoration: none;
+}
+/*--------------------instruction-----------------------*/
