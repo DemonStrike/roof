@@ -1106,6 +1106,77 @@ clear: both;
     display: inline-block;
     vertical-align: top;
     margin-left: 20px;
+    max-width: 400px;
 }
 
+.card-information-text span{
+    font-family: "ProximaNova-Bold";
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card-information-text {
+    margin-bottom: 0px;
+}
+
+.page-information-money {
+    font-family: "ProximaNova-Bold";
+    font-size: 21px;
+}
+
+.page-information-instruction a {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #004275;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.page-information-instruction a:hover {
+    text-decoration: none;
+}
+
+.page-information-instruction {
+    margin-top: 20px;
+}
+
+.page-information-instruction img{
+    margin-top: 6px;
+}
+
+.characteristic-text {
+    max-width: 450px;
+    display: inline-block;
+}
+
+.characteristic-tittle {
+    font-family: "ProximaNova-Bold";
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.characteristic-text ul {
+    margin-top: 0px;
+} 
+
+.characteristic-text li {
+    list-style: none;
+    line-height: 28px;
+    margin-left: -40px;
+}
+
+.characteristic-img {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+
+.characteristic-text li span {
+    float: right;
+    margin-left: 40px;
+    font-family: "ProximaNova-Bold";
+} 
 /*--------------------card-----------------------*/
