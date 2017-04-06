@@ -1179,4 +1179,45 @@ clear: both;
     margin-left: 40px;
     font-family: "ProximaNova-Bold";
 } 
+
+.card-plus {
+    background-color: #f5f5f5;
+}
+
+.card-plus-tittle {
+    font-family: "ProximaNova-Black";
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #004275;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.card-plus-block-all {
+    text-align: center;
+}
+
+.card-plus-block {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-right: 40px;
+    vertical-align: top;
+}
+
+.card-plus-block-img{
+    height: 100px;
+}
+
+.card-plus-block::before {
+    content: " ";
+    display: block;
+    width: 65px;
+    height: 115px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -100px;
+    
+}
 /*--------------------card-----------------------*/
