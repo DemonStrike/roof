@@ -10,20 +10,37 @@
     <div class="screen-1 ">
         <div class="container-center">     
             <div class="header">
-                <div class="logo">
+                <a href="index.html" class="logo">
                     <img src="img/gerard-logo.png" alt="">
-                </div>
+                </a>
                 <div class="nav">
-                    <a href="">Главная</a>
-                    <a href="">Продукция</a>
-                    <a href="">Експеременты</a>
-                    <a href="">Комплектующие</a>
-                    <a href="">Инструкции</a>
-                    <a href="">Контакты</a>
+                    <a href="#" class="nav-active">Главная</a>
+                    <a href="card.html">Продукция</a>
+                    <a href="experiment.html">Експеременты</a>
+                    <a href="complect.html">Комплектующие</a>
+                    <a href="instruction.html">Инструкции</a>
+                    <a href="contact.html">Контакты</a>
                 </div>
                 <div class="header-right">
                     <p class="telephone"><span>097</span> 777-77-77</p>
-                    <button class="call">Заказать звонок</button>
+                    <a href="#modal" class="call">Заказать звонок</a>
+                    <div id="modal">
+                        <div class="modal-window">
+                            <div class="form-title">
+                                Закажите бесплатный расчет <br>
+                                <span>Введите свои даныне в форму ниже, <br> 
+                                и получите бесплатный расчет <br>
+                                на кровлю черепицы
+                                </span>
+                            </div>
+                            <form action="">
+                                <input class="input-text" type="text" value="Ваше имя">
+                                <input class="input-text" type="text" value="Ваш телефон">
+                                <input class="input-button" type="button" value="Заказать расчет">
+                            </form>
+                            <a href="#close" class="modal-window-close"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="screen-1-left">
@@ -54,55 +71,55 @@
     <div class="item">
         <div class="container-center">
             <div class="item-all">  
-                <div class="item-block">
+                <a href="card_classic.html" class="item-block">
                     <div class="item-block-img">
                         <img src="img/CLASSIC.jpg" alt="">
                     </div>
                     <div class="item-block-text">
                         <p>CLASSIC</p>
                     </div>
-                </div>
-                <div class="item-block">
+                </a>
+                <a href="card_diamant.html" class="item-block">
                     <div class="item-block-img">
                         <img src="img/Diamant.jpg" alt="">
                     </div>
                     <div class="item-block-text">
                         <p>Diamant</p>
                     </div>
-                </div>
-                <div class="item-block">
+                </a>
+                <a href="card_heritage.html" class="item-block">
                     <div class="item-block-img">
                         <img src="img/Heritage.jpg" alt="">
                     </div>
                     <div class="item-block-text">
                         <p>Heritage</p>
                     </div>
-                </div>
-                <div class="item-block">
+                </a>
+                <a href="card_milano.html" class="item-block">
                     <div class="item-block-img">
                         <img src="img/Milano.jpg" alt="">
                     </div>
                     <div class="item-block-text">
                         <p>Milano</p>
                     </div>
-                </div>
-                <div class="item-block">
+                </a>
+                <a href="card_shake.html" class="item-block">
                     <div class="item-block-img">
                         <img src="img/Shake.jpg" alt="">
                     </div>
                     <div class="item-block-text">
                         <p>Shake</p>
                     </div>
-                </div>
+                </a>
                 
-                <div class="item-block">
+                <a href="card_shingle.html" class="item-block">
                     <div class="item-block-img">
                         <img src="img/Shingle.jpg" alt="">
                     </div>
                     <div class="item-block-text">
                         <p>Shingle</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -190,7 +207,7 @@
                 <form action="">
                     <input class="input-text" type="text" value="Ваше имя">
                     <input class="input-text" type="text" value="Ваш телефон">
-                    <input class="input-text" type="text" value="Прикрепите файл">
+                    <input class="input-download" type="file" value="Прикрепите файл">
                     <input class="input-button" type="button" value="Заказать расчет">
                 </form>
             </div>
@@ -288,10 +305,28 @@
             <p class="geography-text"><span>Главные региональные офисы:</span> Новая Зеландия, Малайзия, Австралия, Япония, Китай, Объединенные Арабские Эмираты, Словения, Польша, Франция, Канада, Чили, Аргентина.</p>
             <p class="geography-sertificate">Сертификаты</p>
             <div class="geography-sertificate-img">
-                <img src="img/sertificate.jpg" alt="">
-                <img src="img/sertificate.jpg" alt="">
-                <img src="img/sertificate.jpg" alt="">
+                <div class="geography-sertificate-img-block">
+                    <img src="img/certificate.jpg" alt="">
+                    <a href="#modal-certificate" class="geography-sertificate-img-hover"></a>
+                </div>
+                <div class="geography-sertificate-img-block">
+                    <img src="img/certificate1.jpg" alt="">
+                    <a href="" class="geography-sertificate-img-hover"></a>
+                </div>
+                <div class="geography-sertificate-img-block">
+                    <img src="img/certificate2.jpg" alt="">
+                    <a href="" class="geography-sertificate-img-hover"></a>
+                </div>
             </div>
+            
+            <div id="modal-certificate">
+                        <div class="modal-window">
+                            <img src="img/certificate.jpg" alt="">
+                            <a href="#close" class="modal-window-close"></a>
+                        </div>
+                    </div>
+                    
+                    
         </div>
     </div>
     
@@ -314,20 +349,20 @@
                 <p>Производстве композитной <br>черепицы GERARD</p>
             </div>
             <ul class="footer-link-menu">
-                <li>Главная</li>
-                <li>Продукция</li>
-                <li>Експеременты</li>
-                <li>Комплектующие</li>
-                <li>Инструкции</li>
-                <li>Контакты</li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="card.html">Продукция</a></li>
+                <li><a href="experiment.html">Експеременты</a></li>
+                <li><a href="complect.html">Комплектующие</a></li>
+                <li><a href="instruction.html">Инструкции</a></li>
+                <li><a href="contact.html">Контакты</a></li>
             </ul>
             <ul class="footer-link-item">
-                <li>GERARD® Classic</li>
-                <li>GERARD® Heritage</li>
-                <li>GERARD® Shingle</li>
-                <li>GERARD® Shake</li>
-                <li>GERARD® Milano</li>
-                <li>GERARD® Diamant</li>
+                <li><a href="card_classic.html">GERARD® Classic</a></li>
+                <li><a href="card_heritage.html">GERARD® Heritage</a></li>
+                <li><a href="card_shingle.html">GERARD® Shingle</a></li>
+                <li><a href="card_shake.html">GERARD® Shake</a></li>
+                <li><a href="card_milano.html">GERARD® Milano</a></li>
+                <li><a href="card_diamant.html">GERARD® Diamant</a></li>
             </ul>
             <div class="footer-contact">
                 <p class="footer-contact-tel"><span>тел.: </span>+3 (044) 451 61 83 </p>
@@ -350,5 +385,7 @@
                     <p class="copyright-work">Разработка <a target=blank href="http://www.designwork.com.ua/">DesignWork</a></p>
         </div>
     </div>
+    
+    
 </body>
 </html>

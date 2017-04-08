@@ -67,6 +67,19 @@ clear: both;
     padding-left: 30px;
 }
 
+label .input-download {
+    border: solid 1px #e6e6e6;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 280px;
+    height: 60px;
+}
+
+.input-download[type=file]{
+    opacity: 1;
+    cursor: pointer;
+}
+
 .input-button {
     box-sizing: border-box;
     background-color: #e74c3c;
@@ -90,6 +103,104 @@ clear: both;
     font-size: 18px;
     border: 1px solid #e74c3c;
 }
+
+
+
+/*---------modal----------*/
+
+#modal {
+    background: rgba(0,0,0, .9);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    display: none;
+    z-index: 9999;
+    animation: animation-modal 0.5s;
+}
+
+#modal:target {
+    pointer-events: auto;
+    display: block;
+}
+.modal-window {
+    width: 360px;
+    text-align: center;
+    margin: 15% auto;
+    background-color: #fff;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.modal-window input{
+    margin-top: 20px;
+}
+
+.modal-window-close {
+    position: absolute;
+    top: -55px;
+    right: -55px;
+    width: 50px;
+    height: 50px;
+}
+
+ .modal-window-close:hover::before{
+    background-color: #9b2a1f;
+}
+
+ .modal-window-close:hover::after{
+    background-color: #9b2a1f;
+}
+
+.modal-window-close::before {
+    content: " ";
+    display: block;
+    height: 50px;
+    background-color: #e74c3c;
+    width: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    transition: all 0.3s;
+}
+
+.modal-window-close::after {
+    content: " ";
+    display: block;
+    height: 50px;
+    background-color: #e74c3c;
+    width: 2px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    transition: all 0.3s;
+}
+
+@keyframes animation-modal {
+    0% {
+        top: -1500px;
+    }
+    100% {
+        top: 0;;
+    }
+}
+/*---------modal----------*/
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------for-all------------------------------*/
 
 
@@ -97,6 +208,44 @@ clear: both;
 
 
 /*--------------------home-----------------------*/
+
+
+#modal-certificate {
+    background: rgba(0,0,0, .9);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    display: none;
+    z-index: 9999;
+    animation: animation-modal 0.5s;
+}
+
+#modal-certificate:target {
+    pointer-events: auto;
+    display: block;
+}
+
+#modal-certificate .modal-window {
+    max-width: 960px;
+    max-height: 500px;
+    text-align: center;
+    margin: 5% auto;
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+
+.modal-window img {
+    height: inherit;
+}
+
+
+
+
+
 .screen-1 {
     background: url(../img/screen-1.jpg) no-repeat center;
     height: 700px;
@@ -118,6 +267,11 @@ clear: both;
     position: absolute;
     top: 40px;
 }
+
+.nav-active {
+    font-family: "ProximaNova-Bold";
+}
+
 
 .nav a{
     color: #fff;
@@ -389,6 +543,7 @@ clear: both;
     font-size: 30px;
     margin-bottom: 0px;
     padding-top: 30px;
+    margin-top: 0;
 }
 
 .free-form-description {
@@ -713,8 +868,64 @@ clear: both;
     margin-bottom: 60px;
 }
 
+.geography-sertificate-img-hover {
+    width: 160px;
+    height: 233px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.geography-sertificate-img-hover::after {
+    content: " ";
+    display: block;
+    height: 40px;
+    width: 1px;
+    background-color: #fff;
+    margin: 90px auto;
+}
+
+.geography-sertificate-img-hover::before {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 40px;
+    background-color: #fff;
+    position: absolute;
+    left: 60px;
+    top: 108px;
+}
+
+.geography-sertificate-img-hover:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.geography-sertificate-img-block {
+    position: relative;
+    width: 160px;
+    height: 233px;
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.geography-sertificate-img-block:last-child {
+    position: relative;
+    width: 160px;
+    height: 233px;
+    display: inline-block;
+    margin-right: 0px;
+}
+
 .geography-sertificate-img img{
     margin-right: 80px;
+    box-shadow: 10px 10px 0px 0px rgba(0,66,117,1);
+    width: 160px;
+    height: 233px;
 }
 
 .geography-sertificate-img img:last-child{
@@ -760,16 +971,18 @@ clear: both;
 .footer li{
     list-style: none;
     line-height: 24px;
-    text-decoration: underline;
-    transition: all 0.5s;
-    
+}
+
+.footer a{
+    color: #fff;
+}
+
+.footer a:hover{
+    text-decoration: none;
 }
 
 .footer li:hover{
     list-style: none;
-    line-height: 24px;
-    text-decoration: none;
-    transition: all 3s;
 }
 
 .footer-link-menu {
@@ -1082,16 +1295,64 @@ clear: both;
     margin-bottom: 5px;
 }
 
-.gallery {
+#gallery {
     display: inline-block;
+    position: relative;
 }
 
-.gallery-big-img {
+.gallery-photos {
     margin-top: 30px;
     width: 502px;
     height: 400px;
     background-color: antiquewhite;
     margin-bottom: 12px;
+}
+
+.gallery-photos img{
+    width: 502px;
+    height: 400px;
+    display: none;
+}
+
+.gallery-photos img:first-child{
+    display: block;
+}
+
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.gallery-btn-left {
+    width: 52px;
+    height: 52px;
+    background: #e74c3c url(../img/btn_arrow.png) no-repeat;
+    background-position: 45% 50%;
+    border: none;
+    position: absolute;
+    left: 0;
+    opacity: 0.8;
+}
+
+.gallery-btn-left:hover {
+    opacity: 1;
+}
+
+.gallery-btn-right {
+    width: 52px;
+    height: 52px;
+    background: #e74c3c url(../img/btn_arrow.png) no-repeat;
+    background-position: 45% 50%;
+    transform: rotate(180deg);
+    border: none;
+    position: absolute;
+    right: 0;
+    opacity: 0.8;
+}
+
+.gallery-btn-right:hover {
+    opacity: 1;
 }
 
 .gallery-small-img-block {
@@ -1220,4 +1481,40 @@ clear: both;
     margin-bottom: -100px;
     
 }
+/*--------------------card-----------------------*/
+
+
+
+
+/*--------------------thank-----------------------*/
+
+.thanks-text h2 {
+    font-family: "ProximaNova-Black";
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #004275;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+
+.thanks-text p {
+    font-family: "ProximaNova-Light";
+    font-size: 18px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+/*--------------------thank-----------------------*/
+
+
+
+
+
+/*--------------------card-----------------------*/
+
+.item-card {
+    margin-bottom: 70px;
+}
+
 /*--------------------card-----------------------*/
